@@ -95,7 +95,6 @@ function weather(){
     var lat;
     var temperatureDescription = document.querySelector(".temp-desc");
     var temperatureDegree = document.querySelector(".temp-degree");
-    var locationTimezone = document.querySelector(".loc-zone");
     var forecastOne = document.querySelector(".forecast1");
     var forecastTwo = document.querySelector(".forecast2");
     var forecastThree = document.querySelector(".forecast3");
@@ -150,7 +149,6 @@ function weather(){
                 temper = temper.toFixed(1);
                 temperatureDegree.textContent = temper + "°C";
                 temperatureDescription.textContent = summary;
-                locationTimezone.textContent = data.timezone;
                 setIcon(icon, document.querySelector('.icon'), "white");
             });
             fetch(api)
