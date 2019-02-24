@@ -1,0 +1,243 @@
+body{
+    background-color: black;
+    color: white;
+}
+#clock{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+        /*font-family: Caviar Dreams;*/
+    font-size: 150px;
+    /*Caviar Dreams */
+}
+
+#datum{
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+}
+
+
+#den{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+}
+
+.temp{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.loc{
+    position: absolute;
+    top: 15%;
+    right: 2%;
+}
+.temp-degree{
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 120px;
+}
+
+.temp-desc{
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+.icon-css{
+    position: absolute;
+    top: 13%;
+    right: 2%;
+}
+.loc{
+    color: black;
+    top: 0%;
+    left: 0%;
+}
+.forecast1{
+    color: white;
+    position: absolute;
+    top: 24%;
+    right: 12%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.den1{
+    color: white;
+    position: absolute;
+    top: 24%;
+    right: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.ikona1{
+    color: white;
+    position: absolute;
+    top: 23%;
+    right: 6%;
+}
+.forecast2{
+    color: rgb(225, 225, 225);
+    position: absolute;
+    top: 28%;
+    right: 12%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.den2{
+    color: rgb(225, 225, 225);
+    position: absolute;
+    top: 28%;
+    right: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+.ikona2{
+    color: rgb(225, 225, 225);
+    position: absolute;
+    top: 27%;
+    right: 6%;
+}
+.forecast3{
+    color: rgb(195, 195, 195);
+    position: absolute;
+    top: 32%;
+    right: 12%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.den3{
+    color: rgb(195, 195, 195);
+    position: absolute;
+    top: 32%;
+    right: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.ikona3{
+    color: rgb(195, 195, 195);
+    position: absolute;
+    top: 31%;
+    right: 6%;
+}
+.forecast4{
+    color: rgb(165, 165, 165);
+    position: absolute;
+    top: 36%;
+    right: 12%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.den4{
+    color: rgb(165, 165, 165);
+    position: absolute;
+    top: 36%;
+    right: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+.ikona4{
+    color: rgb(165, 165, 165);
+    position: absolute;
+    top: 35%;
+    right: 6%;
+}
+.forecast5{
+    color: rgb(135, 135, 135);
+    position: absolute;
+    top: 40%;
+    right: 12%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.den5{
+    color: rgb(135, 135, 135);
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+.ikona5{
+    color: rgb(135, 135, 135);
+    position: absolute;
+    top: 39%;
+    right: 6%;
+}
+.forecast6{
+    color: rgb(105, 105, 105);
+    position: absolute;
+    top: 44%;
+    right: 12%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.den6{
+    color: rgb(105, 105, 105);
+    position: absolute;
+    top: 44%;
+    right: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.ikona6{
+    color: rgb(105, 105, 105);
+    position: absolute;
+    top: 43%;
+    right: 6%;
+}
+.forecast7{
+    color: rgb(75, 75, 75);
+    position: absolute;
+    top: 48%;
+    right: 12%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.den7{
+    color: rgb(75, 75, 75);
+    position: absolute;
+    top: 48%;
+    right: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.ikona7{
+    color: rgb(75, 75, 75);
+    position: absolute;
+    top: 47%;
+    right: 6%;
+}
