@@ -127,11 +127,12 @@ function weather(){
     den7.textContent = zkratkaDne(day);
     day = day + 1 ;
 
-    if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(position =>{
-            lon = position.coords.longitude;
-            lat = position.coords.latitude;
-            
+    //if(navigator.geolocation){
+        //navigator.geolocation.getCurrentPosition(position =>{
+           // lon = position.coords.longitude;
+           // lat = position.coords.latitude;
+            lat = 49.6371882;
+            lon = 16.2263193;
             const proxy = "https://cors-anywhere.herokuapp.com/"
             const api = `${proxy}https://api.darksky.net/forecast/6a6067b74f8f52473ed8b57bf9a64563/${lat},${lon}`;
             
@@ -246,9 +247,9 @@ function weather(){
 
             })
 
-        }); 
+        //}); 
            
-    }
+    //}
 
     setTimeout(weather, 300000)
 };
