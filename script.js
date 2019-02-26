@@ -88,6 +88,7 @@ function zkratkaDne(day){
                     var day = 0;
                 }
                 return (den);
+                
 }
 
 function weather(){
@@ -112,20 +113,44 @@ function weather(){
     var den7 = document.querySelector(".den7");
     var date = new Date();
     var day = date.getDay();
+    if (day == 7){
+        day = 0;
+    }
     day = day + 1;
     den1.textContent = zkratkaDne(day);
+    if (day == 7){
+        day = 0;
+    }
     day = day + 1 ;
     den2.textContent = zkratkaDne(day);
+    if (day == 7){
+        day = 0;
+    }
     day = day + 1 ;
     den3.textContent = zkratkaDne(day);
+    if (day == 7){
+        day = 0;
+    }
     day = day + 1 ;
     den4.textContent = zkratkaDne(day);
+    if (day == 7){
+        day = 0;
+    }
     day = day + 1 ;
     den5.textContent = zkratkaDne(day);
+    if (day == 7){
+        day = 0;
+    }
     day = day + 1 ;
     den6.textContent = zkratkaDne(day);
+    if (day == 7){
+        day = 0;
+    }
     day = day + 1 ;
     den7.textContent = zkratkaDne(day);
+    if (day == 7){
+        day = 0;
+    }
     day = day + 1 ;
 
     if(navigator.geolocation){
