@@ -63,7 +63,7 @@ function showDay(){
 }
 function zkratkaDne(day){
                 if (day == 1) {
-                    var den = "PON";
+                    var den = "PO";
                 }
                 if (day == 2) {
                     var den = "ÚT";
@@ -88,7 +88,6 @@ function zkratkaDne(day){
                     var day = 0;
                 }
                 return (den);
-                
 }
 
 function weather(){
@@ -96,7 +95,6 @@ function weather(){
     var lat;
     var temperatureDescription = document.querySelector(".temp-desc");
     var temperatureDegree = document.querySelector(".temp-degree");
-    var locationTimezone = document.querySelector(".loc-zone");
     var forecastOne = document.querySelector(".forecast1");
     var forecastTwo = document.querySelector(".forecast2");
     var forecastThree = document.querySelector(".forecast3");
@@ -113,51 +111,49 @@ function weather(){
     var den7 = document.querySelector(".den7");
     var date = new Date();
     var day = date.getDay();
-    if (day == 7){
-        day = 0;
-    }
     day = day + 1;
     den1.textContent = zkratkaDne(day);
-    if (day == 7){
+    if (day == 7) {
         day = 0;
     }
     day = day + 1 ;
     den2.textContent = zkratkaDne(day);
-    if (day == 7){
+    if (day == 7) {
         day = 0;
     }
     day = day + 1 ;
     den3.textContent = zkratkaDne(day);
-    if (day == 7){
+    if (day == 7) {
         day = 0;
     }
     day = day + 1 ;
     den4.textContent = zkratkaDne(day);
-    if (day == 7){
+    if (day == 7) {
         day = 0;
     }
     day = day + 1 ;
     den5.textContent = zkratkaDne(day);
-    if (day == 7){
+    if (day == 7) {
         day = 0;
     }
     day = day + 1 ;
     den6.textContent = zkratkaDne(day);
-    if (day == 7){
+    if (day == 7) {
         day = 0;
     }
     day = day + 1 ;
     den7.textContent = zkratkaDne(day);
-    if (day == 7){
+    if (day == 7) {
         day = 0;
     }
     day = day + 1 ;
 
-    if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(position =>{
-            lon = position.coords.longitude;
-            lat = position.coords.latitude;
-            
+    //if(navigator.geolocation){
+        //navigator.geolocation.getCurrentPosition(position =>{
+           // lon = position.coords.longitude;
+           // lat = position.coords.latitude;
+            lat = 49.6371882;
+            lon = 16.2263193;
             const proxy = "https://cors-anywhere.herokuapp.com/"
             const api = `${proxy}https://api.darksky.net/forecast/6a6067b74f8f52473ed8b57bf9a64563/${lat},${lon}`;
             
@@ -175,7 +171,6 @@ function weather(){
                 temper = temper.toFixed(1);
                 temperatureDegree.textContent = temper + "°C";
                 temperatureDescription.textContent = summary;
-                locationTimezone.textContent = data.timezone;
                 setIcon(icon, document.querySelector('.icon'), "white");
             });
             fetch(api)
@@ -273,9 +268,9 @@ function weather(){
 
             })
 
-        }); 
+        //}); 
            
-    }
+    //}
 
     setTimeout(weather, 300000)
 };
@@ -286,6 +281,106 @@ function setIcon(icon, iconID, colorID){
     return skycons.set(iconID, Skycons[currentIcon]);
 
 }
+function signInfun(){
+    gapi.auth2.getAuthInstance().signIn();
+    }
+    function makeApiCall() {
+      var params = {
+        // The ID of the spreadsheet to retrieve data from.
+        spreadsheetId: '1u8wYKCpoDfc_vwKorvrUWzlSm30SmSBKKde4MuzBawI',  // TODO: Update placeholder value.
+
+        // The A1 notation of the values to retrieve.
+        range: 'A1:A9',  // TODO: Update placeholder value.
+
+        // How values should be represented in the output.
+        // The default render option is ValueRenderOption.FORMATTED_VALUE.
+       // valueRenderOption: '',  // TODO: Update placeholder value.
+
+        // How dates, times, and durations should be represented in the output.
+        // This is ignored if value_render_option is
+        // FORMATTED_VALUE.
+        // The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].
+        //dateTimeRenderOption: '',  // TODO: Update placeholder value.
+      };
+
+      var request = gapi.client.sheets.spreadsheets.values.get(params);
+      request.then(function(response) { 
+        console.log(response); 
+        console.log(response.result);
+        tabulka = [];
+        tabulka = response.result.values;
+        var delka = tabulka.length;
+        var i = 0;
+        console.log(tabulka);
+        var aaa1 = document.querySelector(".aaa1");
+        var aaa2 = document.querySelector(".aaa2");
+        var aaa3 = document.querySelector(".aaa3");
+        var aaa4 = document.querySelector(".aaa4");
+        var aaa5 = document.querySelector(".aaa5");
+        var aaa6 = document.querySelector(".aaa6");
+        var aaa7 = document.querySelector(".aaa7");
+        var aaa8 = document.querySelector(".aaa8");
+        var aaa9 = document.querySelector(".aaa9");
+        aaa1.textContent = tabulka[0][0];
+        aaa2.textContent = tabulka[1][0];
+        aaa3.textContent = tabulka[2][0];
+        aaa4.textContent = tabulka[3][0];
+        aaa5.textContent = tabulka[4][0];
+        aaa6.textContent = tabulka[5][0];
+        aaa7.textContent = tabulka[6][0];
+        aaa8.textContent = tabulka[7][0];
+        aaa9.textContent = tabulka[8][0];
+
+        //do{
+        //  console.log(tabulka[i][0]);
+        //  var choice = (tabulka[i][0]);
+        //  console.log(choice);
+        //  var uf = 1+i;
+        // var bunka = 'aaa' + uf;
+        // document.getElementById(bunka).innerText = choice;
+        //  document.getElementById(bunka).textContent = choice;
+         // i++;
+         // }
+        //while(i<delka);
+
+        })};
+      
+    
+
+    function initClient() {
+      var API_KEY = 'AIzaSyBl5FYOfaEYvWtckAFHO1MihucHj9vjVj8';
+
+      var CLIENT_ID = '863305066405-rp19hl58vb3hhqn2qs6vdu1afrvefumc.apps.googleusercontent.com';
+
+      // TODO: Authorize using one of the following scopes:
+      //   'https://www.googleapis.com/auth/drive'
+      //   'https://www.googleapis.com/auth/drive.file'
+      //   'https://www.googleapis.com/auth/drive.readonly'
+      //   'https://www.googleapis.com/auth/spreadsheets'
+      //   'https://www.googleapis.com/auth/spreadsheets.readonly'
+      var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
+
+      gapi.client.init({
+        'apiKey': API_KEY,
+        'clientId': CLIENT_ID,
+        'scope': SCOPE,
+        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+      }).then(function() {
+        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
+        updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+      });
+    }
+
+    function handleClientLoad() {
+      gapi.load('client:auth2', initClient);
+      setTimeout(handleClientLoad, 10000)
+    }
+
+    function updateSignInStatus(isSignedIn) {
+      if (isSignedIn) {
+        makeApiCall();
+      }
+    }
 
 
 
@@ -299,8 +394,7 @@ function setIcon(icon, iconID, colorID){
 
 
 
-
-
+handleClientLoad();
 weather();
 showTime();
 showDate();
