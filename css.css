@@ -244,11 +244,11 @@ body{
 .aaa1{
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 28%;
+    top: 30%;
     left: 10%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 38px;
 
 }
 .aaa2{
@@ -258,76 +258,76 @@ body{
     left: 10%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 38px;
 
 }
 .aaa3{
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 42%;
+    top: 40%;
     left: 10%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 38px;
 
 }
 .aaa4{
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 49%;
+    top: 45%;
     left: 10%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 38px;
 
 }
 .aaa5{
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 56%;
+    top: 50%;
     left: 10%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 38px;
 
 }
 .aaa6{
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 63%;
+    top: 55%;
     left: 10%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 38px;
 
 }
 .aaa7{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 38px;
+
+}
+.aaa8{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 38px;
+
+}
+.aaa9{
     color: rgb(255, 255, 255);
     position: absolute;
     top: 70%;
     left: 10%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 30px;
-
-}
-.aaa8{
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 77%;
-    left: 10%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 30px;
-
-}
-.aaa9{
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 84%;
-    left: 10%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 30px;
+    font-size: 38px;
 
 }
