@@ -394,8 +394,9 @@ function signInfun(){
 
 
 
-handleClientLoad();
+
 weather();
 showTime();
 showDate();
 showDay();
+handleClientLoad();
