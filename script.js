@@ -361,7 +361,7 @@ function signInfun(){
       var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
 
         gapi.load('client',{
-                  timeout: 5000;
+                  timeout: 5000
                   });
       gapi.client.init({
         'apiKey': API_KEY,
