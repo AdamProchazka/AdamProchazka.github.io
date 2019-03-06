@@ -360,6 +360,9 @@ function signInfun(){
       //   'https://www.googleapis.com/auth/spreadsheets.readonly'
       var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
 
+        gapi.load('client',{
+                  timeout: 5000;
+                  });
       gapi.client.init({
         'apiKey': API_KEY,
         'clientId': CLIENT_ID,
@@ -372,7 +375,7 @@ function signInfun(){
     }
 
     function handleClientLoad() {
-      gapi.load('client:auth2', initClient);
+      gapi.load('client', initClient);
       setTimeout(handleClientLoad, 10000)
     }
 
