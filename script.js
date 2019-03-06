@@ -358,7 +358,7 @@ function signInfun(){
       //   'https://www.googleapis.com/auth/drive.readonly'
       //   'https://www.googleapis.com/auth/spreadsheets'
       //   'https://www.googleapis.com/auth/spreadsheets.readonly'
-      var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
+      var SCOPE = 'http://www.googleapis.com/auth/spreadsheets.readonly';
 
         gapi.load('client',{
                   timeout: 5000
@@ -367,7 +367,7 @@ function signInfun(){
         'apiKey': API_KEY,
         'clientId': CLIENT_ID,
         'scope': SCOPE,
-        'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+        'discoveryDocs': ['http://sheets.googleapis.com/$discovery/rest?version=v4'],
       }).then(function() {
         gapi.auth2.getAuthInstance().isSignedIn.listen(updateSignInStatus);
         updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
