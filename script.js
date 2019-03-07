@@ -402,4 +402,4 @@ weather();
 showTime();
 showDate();
 showDay();
-handleClientLoad();
+//handleClientLoad();
