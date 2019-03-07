@@ -402,5 +402,5 @@ weather();
 showTime();
 showDate();
 showDay();
-gapi.load("client", timeout:5000);
+gapi.load("client",{timeout: 15000});
 handleClientLoad();
