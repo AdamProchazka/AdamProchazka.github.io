@@ -102,8 +102,13 @@
                                                 .then(function(response) {
                                                       // Handle the results here (response.result has the parsed body).
                                                       console.log("Response", response);
+                                                      for item in response.result.items do{
+                                                      console.log(item.title);
+                                                      }
+                                                      
                                                       },
                                                       function(err) { console.error("Execute error", err); });
+                                                      
         }
         gapi.load("client:auth2", function() {
                   gapi.auth2.init({client_id: "863305066405-rp19hl58vb3hhqn2qs6vdu1afrvefumc.apps.googleusercontent.com"});
