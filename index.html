@@ -102,9 +102,8 @@
                                                 .then(function(response) {
                                                       // Handle the results here (response.result has the parsed body).
                                                       console.log("Response", response);
-                                                      response = response.json;
-                                                      for item in response.result.items do{
-                                                      console.log(item.title);
+                                                      
+                                                      console.log(esponse.result.items.1.title);
                                                       }
                                                       
                                                       },
