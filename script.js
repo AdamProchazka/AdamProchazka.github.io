@@ -15,7 +15,7 @@ function showTime(){
     document.getElementById("clock").innerText = time;
     document.getElementById("clock").textContent = time;
 
-    setTimeout(showTime, 200)
+    setTimeout(showTime, 1)
 }
 
 function showDate(){
